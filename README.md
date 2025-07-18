@@ -1,5 +1,12 @@
 # 🧠 Vertex AI - Predicción del Riesgo Crediticio con AutoML
 
+![Qwiklabs](https://img.shields.io/badge/Lab-Aprobado%20en%20Qwiklabs-blue)
+
+
+![GCP](https://img.shields.io/badge/Google%20Cloud-Vertex%20AI-blue)
+![AutoML](https://img.shields.io/badge/AutoML-Tabular-green)
+![Status](https://img.shields.io/badge/Lab-Aprobado-brightgreen)
+
 Este proyecto documenta el laboratorio práctico realizado en Google Cloud Platform usando **Vertex AI AutoML Tabular** para predecir el riesgo crediticio de clientes a partir de un conjunto de datos tabular.
 
 ---
@@ -32,21 +39,11 @@ vertex-ai-credit-risk/
 ├── .gitignore                # Ignorar archivos temporales o sensibles
 └── README.md                 # Este archivo
 📦 Dataset utilizado
-Nombre del conjunto: LoanRisk
-
-Ubicación: CSV precargado en Cloud Storage (usado durante el lab)
-
-Variables:
-
-ClientID
-
-Age
-
-Income
-
-Loan
-
-Default (variable objetivo: 0 = pagó, 1 = incumplió)
+Atributo	Valor
+Nombre	LoanRisk
+Ubicación	CSV precargado en Cloud Storage (Qwiklabs)
+Variables	ClientID, Age, Income, Loan, Default (*)
+Variable objetivo	Default (0 = pagó, 1 = incumplió)
 
 🔍 Herramientas utilizadas
 Google Cloud Platform
@@ -59,7 +56,7 @@ Cloud Storage
 
 Cloud Shell
 
-bash para automatizar predicciones con curl
+Bash para automatizar predicciones con curl
 
 ⚙️ Predicción de prueba
 bash
